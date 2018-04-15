@@ -1,18 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule} from '@angular/forms';
 
 import {AppComponent} from './app.component';
-import {FormsModule} from '@angular/forms';
 import {ServerComponent} from './server/server.component';
-import { ServersComponent } from './servers/servers.component';
-import { WarningsComponent } from './warnings/warnings.component';
-import { WarningErrorComponent } from './warning/error/warning.error.component';
-import { WarningSuccessComponent } from './warning/success/warning.success.component';
+import {ServersComponent} from './servers/servers.component';
+import {UserInputComponent} from './userinput/userinput.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ServerComponent, ServersComponent, WarningsComponent, WarningErrorComponent, WarningSuccessComponent
+    AppComponent, ServerComponent, ServersComponent, UserInputComponent
   ],
   imports: [
     BrowserModule,

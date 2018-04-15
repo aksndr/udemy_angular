@@ -2,8 +2,13 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-server',
-  templateUrl: './server.component.html'
+  template: `<li>{{'Server'}} id: {{ serverId }} status: {{ getServerStatus() }}</li>`
 })
-export class ServerComponent{
+export class ServerComponent {
+  serverId = 1;
+  serverStatus = 'online';
 
+  getServerStatus() {
+    return this.serverStatus;
+  }
 }
